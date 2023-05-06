@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "dad-jokes-frontend"
+version = "0.1.0"
+description = "Front end for the dad jokes application."
+authors = ["octavioflo <41705533+octavioflo@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "dad_jokes_frontend"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.9.7 || >3.9.7,<4.0"
+streamlit = "^1.22.0"
+requests = "^2.30.0"
+watchdog = "^3.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
